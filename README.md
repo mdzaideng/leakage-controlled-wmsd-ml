@@ -203,7 +203,7 @@ If you use this code or data, please cite:
 
 **Md. Zaid Hossain**<br>
 Department of Industrial Engineering and Management<br>
-Khulna University of Engineering and Technology (KUET)<br>
+Khulna University of Engineering and Technology<br>
 Khulna-9203, Bangladesh<br><br>
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0003--3301--3609-a6ce39?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0009-0003-3301-3609)
 
@@ -213,7 +213,7 @@ Khulna-9203, Bangladesh<br><br>
 **Borhan Ul Arif**<br>
 Department of Computer Science and Engineering<br>
 Southeast University<br>
-Dhaka, Bangladesh<br><br><br><br>
+Dhaka, Bangladesh<br><br><br>
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0007--0536--8305-a6ce39?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0009-0007-0536-8305)
 
 </td>
