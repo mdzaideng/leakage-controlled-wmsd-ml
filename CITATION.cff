@@ -1,4 +1,4 @@
-cff-version: 1.0.0
+cff-version: 1.2.0
 message: "If you use this software, please cite it using the metadata below."
 type: software
 title: >-
@@ -36,18 +36,3 @@ keywords:
   - occupational ergonomics
   - balanced accuracy
   - reproducibility
-preferred-citation:
-  type: article
-  title: >-
-    Leakage-Controlled Machine Learning for Work-Related Musculoskeletal
-    Disorder Risk Classification Among Garment Sewing-Machine Operators
-  authors:
-    - family-names: Hossain
-      given-names: "Md. Zaid"
-      orcid: "https://orcid.org/0009-0003-3301-3609"
-    - family-names: Arif
-      given-names: "Borhan Ul"
-      orcid: "https://orcid.org/0009-0007-0536-8305"
-  journal: "Results in Engineering"
-  year: 2026
-  notes: "Manuscript under review"
