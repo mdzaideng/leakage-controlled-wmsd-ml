@@ -1,0 +1,53 @@
+cff-version: 1.0.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: >-
+  Leakage-Controlled WMSD-ML: Reproducibility Package for Work-Related
+  Musculoskeletal Disorder Risk Classification Among Garment
+  Sewing-Machine Operators
+authors:
+  - family-names: Hossain
+    given-names: "Md. Zaid"
+    orcid: "https://orcid.org/0009-0003-3301-3609"
+    affiliation: >-
+      Department of Industrial Engineering and Management,
+      Khulna University of Engineering and Technology,
+      Khulna-9203, Bangladesh
+  - family-names: Arif
+    given-names: "Borhan Ul"
+    orcid: "https://orcid.org/0009-0007-0536-8305"
+    affiliation: >-
+      Department of Computer Science and Engineering,
+      Southeast University, Dhaka, Bangladesh
+version: "1.0.0"
+doi: 10.5281/zenodo.22770248
+date-released: "2026-09-15"
+url: "https://github.com/mdzaideng/leakage-controlled-wmsd-ml"
+repository-code: "https://github.com/mdzaideng/leakage-controlled-wmsd-ml"
+license: MIT
+keywords:
+  - machine learning
+  - work-related musculoskeletal disorders
+  - WMSD
+  - RULA
+  - leakage control
+  - nested cross-validation
+  - garment workers
+  - occupational ergonomics
+  - balanced accuracy
+  - reproducibility
+preferred-citation:
+  type: article
+  title: >-
+    Leakage-Controlled Machine Learning for Work-Related Musculoskeletal
+    Disorder Risk Classification Among Garment Sewing-Machine Operators
+  authors:
+    - family-names: Hossain
+      given-names: "Md. Zaid"
+      orcid: "https://orcid.org/0009-0003-3301-3609"
+    - family-names: Arif
+      given-names: "Borhan Ul"
+      orcid: "https://orcid.org/0009-0007-0536-8305"
+  journal: "Results in Engineering"
+  year: 2026
+  notes: "Manuscript under review"
