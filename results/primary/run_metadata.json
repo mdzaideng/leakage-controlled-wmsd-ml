@@ -1,0 +1,15 @@
+{
+  "seed": 20260904,
+  "participants": 60,
+  "class_counts": {
+    "Medium": 37,
+    "High": 17,
+    "Low": 6
+  },
+  "outer_folds": 5,
+  "outer_repeats": 10,
+  "inner_folds": 3,
+  "selected_best_model": "GBT",
+  "primary_runtime_seconds": 390.84402933700005,
+  "ablation_runtime_seconds": 72.30313879200003
+}

@@ -1,0 +1,8 @@
+best_model,other_model,best_only_correct,other_only_correct,p_raw,p_holm
+GBT,AB,4,0,0.125,0.625
+GBT,DT,5,0,0.0625,0.375
+GBT,LR,4,0,0.125,0.625
+GBT,NB,6,1,0.125,0.625
+GBT,RF,1,0,1.0,1.0
+GBT,SVM,2,0,0.5,1.0
+GBT,kNN,9,0,0.00390625,0.02734375

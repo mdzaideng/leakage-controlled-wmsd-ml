@@ -1,0 +1,337 @@
+<mxfile host="app.diagrams.net" agent="supervisor-review" pages="2">
+  <diagram name="WMSD reanalysis workflow" id="wmsd-reanalysis-corrected">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="2000" pageHeight="1222" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c12" parent="1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;strokeColor=#6c8ebf;strokeWidth=1;verticalAlign=top;fillColor=#dae8fc;fontSize=20;sketch=1;curveFitting=1;jiggle=2;" value="" vertex="1">
+          <mxGeometry height="172" width="1610" x="40" y="174" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" parent="1" style="rounded=1;arcSize=1;whiteSpace=wrap;html=1;strokeColor=#56517e;strokeWidth=1;verticalAlign=top;fillColor=#d0cee2;fontSize=20;sketch=1;curveFitting=1;jiggle=2;" value="" vertex="1">
+          <mxGeometry height="622" width="1010" x="40" y="373" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#111111;strokeWidth=1.8;fontFamily=Times New Roman;fontSize=24;fontStyle=1;align=center;verticalAlign=middle;fontColor=#4D4D4D;labelBackgroundColor=none;" value="Nested validation within each outer split" vertex="1">
+          <mxGeometry height="37" width="985" x="54" y="393" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" parent="1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;strokeColor=#23445d;strokeWidth=1;verticalAlign=top;fillColor=#bac8d3;fontSize=20;sketch=1;curveFitting=1;jiggle=2;" value="" vertex="1">
+          <mxGeometry height="622" width="580" x="1070" y="373" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#111111;strokeWidth=1.8;fontFamily=Times New Roman;fontSize=24;fontStyle=1;align=center;verticalAlign=middle;fontColor=#4D4D4D;labelBackgroundColor=none;" value="Held-out analysis outputs" vertex="1">
+          <mxGeometry height="37" width="550" x="1085" y="393" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" parent="1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;strokeColor=#3f7a3f;strokeWidth=2;dashed=1;fillColor=none;verticalAlign=top;align=left;spacingLeft=14;spacingTop=4;fontFamily=Times New Roman;fontSize=20;fontStyle=3;fontColor=light-dark(#3F3C54,#6EA16E);glass=1;" value="Outer-training partition (outer test fold held out until step E)" vertex="1">
+          <mxGeometry height="523" width="985" x="54" y="452" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;1. Analytical records&lt;/font&gt;&lt;/b&gt;&lt;br&gt;60 record-level observations; Three-class outcome: Low · Medium · High" vertex="1">
+          <mxGeometry height="135" width="280" x="54" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;2. Leakage guard&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;div&gt;Names, participant IDs, MSD Index, Risk Class label, and nine pain indicators removed - no full-dataset feature selection&lt;/div&gt;" vertex="1">
+          <mxGeometry height="135" width="300" x="371" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b style=&quot;&quot;&gt;3. Repeated outer validation&lt;/b&gt;&lt;br&gt;&lt;/font&gt;Stratified 5-fold cross-validation repeated 10 times; Outer test fold remains untouched" vertex="1">
+          <mxGeometry height="135" width="300" x="707" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;4. Inner model selection&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Stratified 3-fold tuning within outer-training data only; Selected by mean balanced accuracy" vertex="1">
+          <mxGeometry height="135" width="280" x="1044" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;5. Held-out evidence&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Outer-fold classes and probabilities aggregated across 10 repeats; Every prediction generated while held out" vertex="1">
+          <mxGeometry height="135" width="280" x="1360" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;A. Fold-contained preprocessing&lt;/b&gt;&lt;br&gt;Median imputation + scaling (numeric); Most-frequent imputation + one-hot encoding (categorical); Fitted on inner-training folds only" vertex="1">
+          <mxGeometry height="172" width="300" x="60" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="c25" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;B. Imbalance strategy&lt;/b&gt;&lt;br&gt;Primary: no resampling correction; Sensitivity: class weighting SMOTE not used - Low-risk class (n = 6) too small to interpolate" vertex="1">
+          <mxGeometry height="172" width="300" x="390" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;C. Eight classifiers&lt;/b&gt;&lt;br&gt;LR · NB · k-NN · DT · RF · SVM · AdaBoost · GBT; Hyperparameters selected via inner 3-fold CV" vertex="1">
+          <mxGeometry height="172" width="300" x="720" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#fdf1cf;strokeColor=#b8860b;strokeWidth=2.2;fontFamily=Times New Roman;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;E. Refit and predict&lt;/b&gt;&lt;br&gt;Refit on the full outer-training partition;&lt;br&gt;predict the untouched outer-test fold once" vertex="1">
+          <mxGeometry height="118" width="400" x="573" y="728" as="geometry" />
+        </mxCell>
+        <mxCell id="c41" edge="1" parent="1" source="c28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=2;dashed=1;dashPattern=7 5;fontSize=20;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=oval;startFill=1;" target="c24">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="773" y="902" />
+              <mxPoint x="210" y="902" />
+            </Array>
+            <mxPoint x="896" y="795" as="sourcePoint" />
+            <mxPoint x="249.7" y="651" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c27" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#fdf1cf;strokeColor=#b8860b;strokeWidth=2.2;fontFamily=Times New Roman;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;D. Select configuration&lt;/b&gt;&lt;br&gt;Highest mean inner-fold balanced&lt;br&gt;accuracy — chosen without outer-test data" vertex="1">
+          <mxGeometry height="118" width="400" x="120" y="728" as="geometry" />
+        </mxCell>
+        <mxCell id="c29" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Primary model-performance summary&lt;/b&gt;&lt;br&gt;Balanced accuracy · Macro-F1 · MCC · Repeat-level estimates; record-clustered bootstrap intervals for the leading model" vertex="1">
+          <mxGeometry height="108" width="550" x="1085" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Secondary descriptive performance&lt;/b&gt;&lt;br&gt;Accuracy · class-wise sensitivity / specificity / precision; Held-out consensus confusion matrix" vertex="1">
+          <mxGeometry height="108" width="550" x="1085" y="573" as="geometry" />
+        </mxCell>
+        <mxCell id="c31" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Prespecified robustness analyses&lt;/b&gt;&lt;br&gt;&lt;div&gt;Postural-only vs non-postural-only vs combined feature-set ablation;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;No-resampling vs class-weighting sensitivity analysis;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Learning curve · exploratory sex-stratified performance;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Seven paired McNemar comparisons, Holm-corrected&lt;/div&gt;" vertex="1">
+          <mxGeometry height="154" width="550" x="1085" y="701" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#fdf1cf;strokeColor=#b8860b;strokeWidth=2.2;fontFamily=Times New Roman;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Evidence-based interpretation&lt;/b&gt;&lt;br&gt;Dynamic-RULA increment tested, not assumed - deployment not claimed" vertex="1">
+          <mxGeometry height="100" width="550" x="1085" y="875" as="geometry" />
+        </mxCell>
+        <mxCell id="c33" edge="1" parent="1" source="c19" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=2;fontSize=20;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="c20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="413" y="268" as="sourcePoint" />
+            <mxPoint x="435" y="268" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c34" edge="1" parent="1" source="c20" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=2;fontSize=20;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="c21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="704.6" y="268" as="sourcePoint" />
+            <mxPoint x="726.6" y="268" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c35" edge="1" parent="1" source="c21" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=2;fontSize=20;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="c22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1028" y="268" as="sourcePoint" />
+            <mxPoint x="1018.8000000000001" y="268" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c36" edge="1" parent="1" source="c22" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=2;fontSize=20;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="c23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1348" y="268" as="sourcePoint" />
+            <mxPoint x="1370" y="268" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c37" edge="1" parent="1" source="c24" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=2;fontSize=20;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="376.3" y="586" as="sourcePoint" />
+            <mxPoint x="394.3" y="586" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c38" edge="1" parent="1" source="c25" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=2;fontSize=20;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="c26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="695.7" y="586" as="sourcePoint" />
+            <mxPoint x="713.7" y="586" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c39" edge="1" parent="1" source="c27" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=2;fontSize=20;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="c28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="474" y="787" as="sourcePoint" />
+            <mxPoint x="492" y="787" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c40" edge="1" parent="1" source="c25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=2;fontSize=20;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=oval;startFill=1;" target="c27">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540.03" y="702.03" />
+              <mxPoint x="342.09" y="702.03" />
+            </Array>
+            <mxPoint x="619" y="651" as="sourcePoint" />
+            <mxPoint x="342" y="677" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c42" edge="1" parent="1" source="c29" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=2;fontSize=20;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="c30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1420" y="553" as="sourcePoint" />
+            <mxPoint x="1420" y="573" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c43" edge="1" parent="1" source="c30" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=2;fontSize=20;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="c31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1420" y="681" as="sourcePoint" />
+            <mxPoint x="1420" y="701" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c44" edge="1" parent="1" source="c31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=2;fontSize=20;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="c32">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1380" y="855" />
+              <mxPoint x="1380" y="855" />
+            </Array>
+            <mxPoint x="1420" y="941" as="sourcePoint" />
+            <mxPoint x="1420" y="961" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c45" edge="1" parent="1" source="c28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#003366;strokeWidth=2.5;fontSize=20;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=oval;startFill=1;" target="c29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1030.08" y="787" />
+              <mxPoint x="1030.08" y="499" />
+            </Array>
+            <mxPoint x="860.0000000000002" y="752.9999999999998" as="sourcePoint" />
+            <mxPoint x="1242" y="501" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c46" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Times New Roman;fontSize=20;fontStyle=3;fontColor=light-dark(#47414D,#6EA16E);labelBorderColor=none;" value="Repeated across all outer folds and 10 repeats" vertex="1">
+          <mxGeometry height="18" width="440" x="280" y="872" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Copy of WMSD reanalysis workflow" id="Aihv_FQrzcQMMJAuo_4H">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="2000" pageHeight="1222" math="0" shadow="0">
+      <root>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-0" />
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-1" parent="ZlOQ9P2n7Ayk0jZdTnea-0" />
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-2" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Times New Roman;fontSize=28;fontStyle=1;" value="Leakage-controlled machine-learning reanalysis workflow" vertex="1">
+          <mxGeometry height="60" width="2000" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-3" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;strokeColor=#111111;strokeWidth=2;verticalAlign=top;fillColor=#f3f6fb;" value="" vertex="1">
+          <mxGeometry height="258" width="1920" x="40" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-4" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.8;fontFamily=Times New Roman;fontSize=16.5;fontStyle=1;align=center;verticalAlign=middle;" value="End-to-end analysis" vertex="1">
+          <mxGeometry height="46" width="1870" x="65" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-5" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;strokeColor=#111111;strokeWidth=2;verticalAlign=top;fillColor=#eaf3ea;" value="" vertex="1">
+          <mxGeometry height="714" width="1180" x="40" y="388" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-6" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.8;fontFamily=Times New Roman;fontSize=16.5;fontStyle=1;align=center;verticalAlign=middle;" value="Nested validation within each outer split" vertex="1">
+          <mxGeometry height="46" width="1130" x="65" y="408" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-7" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;strokeColor=#111111;strokeWidth=2;verticalAlign=top;fillColor=#fdeee0;" value="" vertex="1">
+          <mxGeometry height="714" width="700" x="1260" y="388" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-8" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.8;fontFamily=Times New Roman;fontSize=16.5;fontStyle=1;align=center;verticalAlign=middle;" value="Held-out analysis outputs" vertex="1">
+          <mxGeometry height="46" width="650" x="1285" y="408" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-9" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;strokeColor=#3f7a3f;strokeWidth=1.4;dashed=1;fillColor=#ffffff;verticalAlign=top;align=left;spacingLeft=14;spacingTop=4;fontFamily=Times New Roman;fontSize=12;fontStyle=2;fontColor=#3f7a3f;" value="Outer-training partition (outer test fold held out until step E)" vertex="1">
+          <mxGeometry height="612" width="1130" x="65" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-10" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#dce9f6;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;1. Analytical records&lt;/b&gt;&lt;br&gt;60 record-level observations&lt;br&gt;Three-class outcome: Low · Medium · High" vertex="1">
+          <mxGeometry height="148" width="356.4" x="65" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-11" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#dce9f6;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;2. Leakage guard&lt;/b&gt;&lt;br&gt;Names, participant IDs, MSD Index,&lt;br&gt;Risk Class label, and nine pain&lt;br&gt;indicators removed — no full-dataset&lt;br&gt;feature selection" vertex="1">
+          <mxGeometry height="148" width="356.4" x="443.4" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-12" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#dce9f6;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;3. Repeated outer validation&lt;/b&gt;&lt;br&gt;Stratified 5-fold cross-validation&lt;br&gt;repeated 10 times&lt;br&gt;Outer test fold remains untouched" vertex="1">
+          <mxGeometry height="148" width="356.4" x="821.8" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-13" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#dce9f6;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;4. Inner model selection&lt;/b&gt;&lt;br&gt;Stratified 3-fold tuning within&lt;br&gt;outer-training data only&lt;br&gt;Selected by mean balanced accuracy" vertex="1">
+          <mxGeometry height="148" width="356.4" x="1200.2" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-14" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#dce9f6;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;5. Held-out evidence&lt;/b&gt;&lt;br&gt;Outer-fold classes and probabilities&lt;br&gt;aggregated across 10 repeats&lt;br&gt;Every prediction generated while held out" vertex="1">
+          <mxGeometry height="148" width="356.4" x="1578.6" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-15" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;A. Fold-contained preprocessing&lt;/b&gt;&lt;br&gt;Median imputation + scaling (numeric)&lt;br&gt;Most-frequent imputation + one-hot&lt;br&gt;encoding (categorical)&lt;br&gt;Fitted on inner-training folds only" vertex="1">
+          <mxGeometry height="172" width="351.3" x="85" y="494" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-16" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;B. Imbalance strategy&lt;/b&gt;&lt;br&gt;Primary: no resampling correction&lt;br&gt;Sensitivity: class weighting&lt;br&gt;SMOTE not used — Low-risk class&lt;br&gt;(n = 6) too small to interpolate" vertex="1">
+          <mxGeometry height="172" width="351.3" x="454.3" y="494" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-17" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;C. Eight classifiers&lt;/b&gt;&lt;br&gt;LR · NB · k-NN · DT · RF · SVM ·&lt;br&gt;AdaBoost · GBT&lt;br&gt;Hyperparameters selected via&lt;br&gt;inner 3-fold CV" vertex="1">
+          <mxGeometry height="172" width="351.3" x="823.7" y="494" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-18" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#fdf1cf;strokeColor=#b8860b;strokeWidth=2.2;fontFamily=Times New Roman;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;D. Select configuration&lt;/b&gt;&lt;br&gt;Highest mean inner-fold balanced&lt;br&gt;accuracy — chosen without outer-test data" vertex="1">
+          <mxGeometry height="118" width="536" x="85" y="692" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-19" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#fdf1cf;strokeColor=#b8860b;strokeWidth=2.2;fontFamily=Times New Roman;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;E. Refit and predict&lt;/b&gt;&lt;br&gt;Refit on the full outer-training partition;&lt;br&gt;predict the untouched outer-test fold once" vertex="1">
+          <mxGeometry height="118" width="536" x="639" y="692" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-20" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Primary model-performance summary&lt;/b&gt;&lt;br&gt;Balanced accuracy · Macro-F1 · MCC&lt;br&gt;Repeat-level estimates; record-clustered&lt;br&gt;bootstrap intervals for the leading model" vertex="1">
+          <mxGeometry height="108" width="650" x="1285" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-21" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Secondary descriptive performance&lt;/b&gt;&lt;br&gt;Accuracy · class-wise sensitivity /&lt;br&gt;specificity / precision&lt;br&gt;Held-out consensus confusion matrix" vertex="1">
+          <mxGeometry height="108" width="650" x="1285" y="588" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-22" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Times New Roman;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Prespecified robustness analyses&lt;/b&gt;&lt;br&gt;Postural-only vs non-postural-only vs&lt;br&gt;combined feature-set ablation&lt;br&gt;No-resampling vs class-weighting&lt;br&gt;sensitivity analysis&lt;br&gt;Learning curve · exploratory sex-&lt;br&gt;stratified performance&lt;br&gt;Seven paired McNemar comparisons,&lt;br&gt;Holm-corrected" vertex="1">
+          <mxGeometry height="240" width="650" x="1285" y="716" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-23" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#fdf1cf;strokeColor=#b8860b;strokeWidth=2.2;fontFamily=Times New Roman;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Evidence-based interpretation&lt;/b&gt;&lt;br&gt;Dynamic-RULA increment tested, not&lt;br&gt;assumed — deployment not claimed" vertex="1">
+          <mxGeometry height="100" width="650" x="1285" y="976" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-24" edge="1" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="421.4" y="244" as="sourcePoint" />
+            <mxPoint x="443.4" y="244" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-25" edge="1" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="799.8" y="244" as="sourcePoint" />
+            <mxPoint x="821.8" y="244" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-26" edge="1" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1178.2" y="244" as="sourcePoint" />
+            <mxPoint x="1200.2" y="244" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-27" edge="1" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1556.6" y="244" as="sourcePoint" />
+            <mxPoint x="1578.6" y="244" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-28" edge="1" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="436.3" y="580" as="sourcePoint" />
+            <mxPoint x="454.3" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-29" edge="1" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="805.7" y="580" as="sourcePoint" />
+            <mxPoint x="823.7" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-30" edge="1" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="621" y="751" as="sourcePoint" />
+            <mxPoint x="639" y="751" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-31" edge="1" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.8;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="682" />
+              <mxPoint x="353" y="682" />
+            </Array>
+            <mxPoint x="630" y="666" as="sourcePoint" />
+            <mxPoint x="353" y="692" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-32" edge="1" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.8;dashed=1;dashPattern=7 5;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="907" y="840" />
+              <mxPoint x="260.7" y="840" />
+            </Array>
+            <mxPoint x="907" y="810" as="sourcePoint" />
+            <mxPoint x="260.7" y="666" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-33" edge="1" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1610" y="568" as="sourcePoint" />
+            <mxPoint x="1610" y="588" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-34" edge="1" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1610" y="696" as="sourcePoint" />
+            <mxPoint x="1610" y="716" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-35" edge="1" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1610" y="956" as="sourcePoint" />
+            <mxPoint x="1610" y="976" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-36" edge="1" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.8;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1240" y="751" />
+              <mxPoint x="1240" y="514" />
+            </Array>
+            <mxPoint x="1175" y="751" as="sourcePoint" />
+            <mxPoint x="1285" y="514" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-37" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Times New Roman;fontSize=12.5;fontStyle=2;fontColor=#3f7a3f;" value="Repeated across all outer folds and 10 repeats" vertex="1">
+          <mxGeometry height="18" width="440" x="363.8" y="816" as="geometry" />
+        </mxCell>
+        <mxCell id="ZlOQ9P2n7Ayk0jZdTnea-38" parent="ZlOQ9P2n7Ayk0jZdTnea-1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#f5f6f8;strokeColor=#666666;strokeWidth=1.4;fontFamily=Times New Roman;fontSize=15;fontStyle=2;align=center;verticalAlign=middle;" value="External validation, independent replication, computational benchmarking, and deployment testing remain future steps." vertex="1">
+          <mxGeometry height="56" width="1920" x="40" y="1136" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

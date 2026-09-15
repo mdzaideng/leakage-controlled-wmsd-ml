@@ -1,0 +1,312 @@
+<mxfile host="app.diagrams.net" agent="supervisor-review" pages="2">
+  <diagram name="WMSD workflow" id="wmsd-workflow-corrected">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="2000" pageHeight="1140" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c12" parent="1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;strokeColor=#666666;strokeWidth=1;verticalAlign=top;fillColor=#f5f5f5;fontSize=20;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="780" width="596" x="40" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.8;fontFamily=Liberation Serif;fontSize=22;fontStyle=1;align=center;verticalAlign=middle;" value="1. Data and outcome construction" vertex="1">
+          <mxGeometry height="48" width="556" x="61" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" parent="1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;strokeWidth=1;verticalAlign=top;fontSize=20;fillColor=#eeeeee;strokeColor=#36393d;" value="" vertex="1">
+          <mxGeometry height="780" width="470" x="680" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.8;fontFamily=Liberation Serif;fontSize=22;fontStyle=1;align=center;verticalAlign=middle;" value="2. Leakage-controlled model development" vertex="1">
+          <mxGeometry height="48" width="430" x="700" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" parent="1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;strokeColor=#36393d;strokeWidth=1;verticalAlign=top;fillColor=#f9f7ed;fontSize=20;" value="" vertex="1">
+          <mxGeometry height="780" width="470" x="1200" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1.8;fontFamily=Liberation Serif;fontSize=22;fontStyle=1;align=center;verticalAlign=middle;" value="3. Evidence output and interpretation" vertex="1">
+          <mxGeometry height="48" width="430" x="1220" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;font style=&quot;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;Bilateral video records&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/font&gt;10 min per operator" vertex="1">
+          <mxGeometry height="88" width="263" x="61" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Kinovea motion tracking&lt;/b&gt;&lt;br&gt;&lt;/font&gt;Automatic tracking; manual correction" vertex="1">
+          <mxGeometry height="88" width="263" x="61" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;Postural inputs&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Trunk, neck, upper-arm, lower-arm, scoring-file inputs" vertex="1">
+          <mxGeometry height="88" width="263" x="61" y="458" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;Frame-level RULA scoring&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Left and right sides" vertex="1">
+          <mxGeometry height="88" width="263" x="61" y="572" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Time-weighted exposure&lt;/b&gt;&lt;br&gt;Bilateral participant summaries" vertex="1">
+          <mxGeometry height="88" width="263" x="61" y="686" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;Worker/workplace data&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Questionnaire and measurements" vertex="1">
+          <mxGeometry height="88" width="263" x="354" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Prespecified predictors&lt;/b&gt;&lt;br&gt;Demographic, physiological,&lt;br&gt;and work-organisation factors" vertex="1">
+          <mxGeometry height="88" width="263" x="354" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="c25" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;mNMQ / SEP assessment&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Symptom-based outcome source" vertex="1">
+          <mxGeometry height="88" width="263" x="354" y="458" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#fbe2e2;strokeColor=#a33a3a;strokeWidth=2;fontFamily=Liberation Serif;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;SEP-derived MSD Index&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Used only to derive the outcome" vertex="1">
+          <mxGeometry height="88" width="263" x="354" y="572" as="geometry" />
+        </mxCell>
+        <mxCell id="c27" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#fbe2e2;strokeColor=#a33a3a;strokeWidth=2;fontFamily=Liberation Serif;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;Risk-class outcome&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Low · Medium · High" vertex="1">
+          <mxGeometry height="88" width="263" x="354" y="686" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;Participant-level analytical dataset&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Prespecified predictors + separate outcome" vertex="1">
+          <mxGeometry height="74" width="556" x="61" y="812" as="geometry" />
+        </mxCell>
+        <mxCell id="c29" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;Outer validation&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Repeated stratified 5-fold CV (10 repeats)" vertex="1">
+          <mxGeometry height="80" width="430" x="700" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;Training-fold pipeline&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Imputation / encoding / scaling fitted within folds&lt;br&gt;No outcome-informed preselection" vertex="1">
+          <mxGeometry height="95" width="430" x="700" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="c31" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;Inner model selection&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Stratified 3-fold tuning on training data only" vertex="1">
+          <mxGeometry height="80" width="430" x="700" y="496" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;Eight classifiers&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Logistic regression · Naïve Bayes · k-NN · SVM&lt;br&gt;Decision tree · Random forest · AdaBoost · GBT&lt;br&gt;Balanced accuracy used for model selection" vertex="1">
+          <mxGeometry height="140" width="430" x="700" y="621" as="geometry" />
+        </mxCell>
+        <mxCell id="c33" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;Held-out predictions&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Outer-fold classes and probabilities only" vertex="1">
+          <mxGeometry height="80" width="430" x="700" y="806" as="geometry" />
+        </mxCell>
+        <mxCell id="c34" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;Primary performance&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Balanced accuracy · Macro-F1 · MCC&lt;br&gt;Uncertainty from held-out predictions" vertex="1">
+          <mxGeometry height="95" width="430" x="1220" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="c35" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Secondary performance&lt;/b&gt;&lt;br&gt;&lt;/font&gt;Accuracy · Per-class metrics · Confusion matrices&lt;br&gt;Consensus summaries clearly labelled secondary" vertex="1">
+          <mxGeometry height="95" width="430" x="1220" y="363" as="geometry" />
+        </mxCell>
+        <mxCell id="c36" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;Robustness analyses&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Feature-set ablation · Imbalance sensitivity&lt;br&gt;Learning curves · Sex-stratified performance&lt;br&gt;Paired McNemar tests with Holm correction" vertex="1">
+          <mxGeometry height="140" width="430" x="1220" y="496" as="geometry" />
+        </mxCell>
+        <mxCell id="c37" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Engineering interpretation&lt;/b&gt;&lt;br&gt;&lt;/font&gt;Incremental value of dynamic RULA tested&lt;br&gt;Deployment claims constrained by evidence" vertex="1">
+          <mxGeometry height="95" width="430" x="1220" y="673" as="geometry" />
+        </mxCell>
+        <mxCell id="c38" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=20;align=center;verticalAlign=middle;spacing=6;" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Current use&lt;/b&gt;&lt;br&gt;&lt;/font&gt;Offline, semi-automated decision-support research" vertex="1">
+          <mxGeometry height="80" width="430" x="1220" y="806" as="geometry" />
+        </mxCell>
+        <mxCell id="c39" edge="1" parent="1" source="c18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#111111;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=20;" target="c19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c40" edge="1" parent="1" source="c23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#111111;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=20;" target="c24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c41" edge="1" parent="1" source="c19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#111111;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=20;" target="c20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" edge="1" parent="1" source="c24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#111111;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=20;" target="c25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c43" edge="1" parent="1" source="c20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#111111;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=20;" target="c21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c44" edge="1" parent="1" source="c25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#111111;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=20;" target="c26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c45" edge="1" parent="1" source="c21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#111111;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=20;" target="c22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c46" edge="1" parent="1" source="c26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#111111;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=20;" target="c27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c47" edge="1" parent="1" source="c29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#111111;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=20;curved=1;" target="c30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c48" edge="1" parent="1" source="c30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#111111;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=20;curved=1;" target="c31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c49" edge="1" parent="1" source="c31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#111111;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=20;curved=1;" target="c32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c50" edge="1" parent="1" source="c32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#111111;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=20;curved=1;" target="c33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c51" edge="1" parent="1" source="c34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#111111;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=20;" target="c35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c52" edge="1" parent="1" source="c35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#111111;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=20;" target="c36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c53" edge="1" parent="1" source="c36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#111111;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=20;" target="c37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c54" edge="1" parent="1" source="c37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#111111;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=20;" target="c38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c55" edge="1" parent="1" source="c22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#111111;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.28;entryY=0;fontSize=20;curved=1;" target="c28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c56" edge="1" parent="1" source="c27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#111111;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.72;entryY=0;fontSize=20;curved=1;" target="c28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c57" edge="1" parent="1" source="c28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#003366;strokeWidth=2.5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=20;curved=1;startSize=6;endSize=8;startArrow=oval;startFill=0;" target="c29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c58" edge="1" parent="1" source="c33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#003366;strokeWidth=2.5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=20;curved=1;startSize=6;endSize=8;startArrow=oval;startFill=0;" target="c34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Copy of WMSD workflow" id="caiAWd53CLqaSAcn3WsZ">
+    <mxGraphModel grid="1" page="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="2000" pageHeight="1140" math="0" shadow="0">
+      <root>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-0" />
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-1" parent="EVld4AH_a6RbFpJAuJxJ-0" />
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-2" parent="EVld4AH_a6RbFpJAuJxJ-1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Liberation Serif;fontSize=28;fontStyle=1;" value="Leakage-controlled WMSD risk-classification workflow" vertex="1">
+          <mxGeometry height="60" width="2000" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-3" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;strokeColor=#111111;strokeWidth=2;verticalAlign=top;fillColor=#dce9f6;" value="" vertex="1">
+          <mxGeometry height="800" width="606" x="40" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-4" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.8;fontFamily=Liberation Serif;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" value="1. Data and outcome construction" vertex="1">
+          <mxGeometry height="48" width="556" x="65" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-5" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;strokeColor=#111111;strokeWidth=2;verticalAlign=top;fillColor=#e6efdd;" value="" vertex="1">
+          <mxGeometry height="800" width="606" x="696" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-6" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.8;fontFamily=Liberation Serif;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" value="2. Leakage-controlled model development" vertex="1">
+          <mxGeometry height="48" width="556" x="721" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-7" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;strokeColor=#111111;strokeWidth=2;verticalAlign=top;fillColor=#fbeed9;" value="" vertex="1">
+          <mxGeometry height="800" width="606" x="1352" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-8" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.8;fontFamily=Liberation Serif;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" value="3. Evidence output and interpretation" vertex="1">
+          <mxGeometry height="48" width="556" x="1377" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-9" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Bilateral video records&lt;/b&gt;&lt;br&gt;10 min per operator" vertex="1">
+          <mxGeometry height="88" width="263" x="65" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-10" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Kinovea motion tracking&lt;/b&gt;&lt;br&gt;Automatic tracking; manual correction" vertex="1">
+          <mxGeometry height="88" width="263" x="65" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-11" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Postural inputs&lt;/b&gt;&lt;br&gt;Trunk, neck, upper- and lower-arm&lt;br&gt;plus documented scoring-file inputs" vertex="1">
+          <mxGeometry height="88" width="263" x="65" y="458" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-12" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Frame-level RULA scoring&lt;/b&gt;&lt;br&gt;Left and right sides" vertex="1">
+          <mxGeometry height="88" width="263" x="65" y="572" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-13" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Time-weighted exposure&lt;/b&gt;&lt;br&gt;Bilateral participant summaries" vertex="1">
+          <mxGeometry height="88" width="263" x="65" y="686" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-14" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Worker/workplace data&lt;/b&gt;&lt;br&gt;Questionnaire and measurements" vertex="1">
+          <mxGeometry height="88" width="263" x="358" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-15" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Prespecified predictors&lt;/b&gt;&lt;br&gt;Demographic, physiological,&lt;br&gt;and work-organisation factors" vertex="1">
+          <mxGeometry height="88" width="263" x="358" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-16" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;mNMQ / SEP assessment&lt;/b&gt;&lt;br&gt;Symptom-based outcome source" vertex="1">
+          <mxGeometry height="88" width="263" x="358" y="458" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-17" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#fbe2e2;strokeColor=#a33a3a;strokeWidth=2;fontFamily=Liberation Serif;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;SEP-derived MSD Index&lt;/b&gt;&lt;br&gt;Used only to derive the outcome" vertex="1">
+          <mxGeometry height="88" width="263" x="358" y="572" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-18" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#fbe2e2;strokeColor=#a33a3a;strokeWidth=2;fontFamily=Liberation Serif;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Risk-class outcome&lt;/b&gt;&lt;br&gt;Low · Medium · High" vertex="1">
+          <mxGeometry height="88" width="263" x="358" y="686" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-19" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Participant-level analytical dataset&lt;/b&gt;&lt;br&gt;Prespecified predictors + separate outcome" vertex="1">
+          <mxGeometry height="74" width="556" x="65" y="812" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-20" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Outer validation&lt;/b&gt;&lt;br&gt;Repeated stratified 5-fold CV (10 repeats)" vertex="1">
+          <mxGeometry height="80" width="556" x="721" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-21" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Training-fold pipeline&lt;/b&gt;&lt;br&gt;Imputation / encoding / scaling fitted within folds&lt;br&gt;No outcome-informed preselection" vertex="1">
+          <mxGeometry height="95" width="556" x="721" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-22" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Inner model selection&lt;/b&gt;&lt;br&gt;Stratified 3-fold tuning on training data only" vertex="1">
+          <mxGeometry height="80" width="556" x="721" y="457" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-23" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Eight classifiers&lt;/b&gt;&lt;br&gt;Logistic regression · Naïve Bayes · k-NN · SVM&lt;br&gt;Decision tree · Random forest · AdaBoost · GBT&lt;br&gt;Balanced accuracy used for model selection" vertex="1">
+          <mxGeometry height="140" width="556" x="721" y="563" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-24" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Held-out predictions&lt;/b&gt;&lt;br&gt;Outer-fold classes and probabilities only" vertex="1">
+          <mxGeometry height="80" width="556" x="721" y="729" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-25" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Primary performance&lt;/b&gt;&lt;br&gt;Balanced accuracy · Macro-F1 · MCC&lt;br&gt;Uncertainty from held-out predictions" vertex="1">
+          <mxGeometry height="95" width="556" x="1377" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-26" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Secondary performance&lt;/b&gt;&lt;br&gt;Accuracy · Per-class metrics · Confusion matrices&lt;br&gt;Consensus summaries clearly labelled secondary" vertex="1">
+          <mxGeometry height="95" width="556" x="1377" y="351" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-27" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Robustness analyses&lt;/b&gt;&lt;br&gt;Feature-set ablation · Imbalance sensitivity&lt;br&gt;Learning curves · Sex-stratified performance&lt;br&gt;Paired McNemar tests with Holm correction" vertex="1">
+          <mxGeometry height="140" width="556" x="1377" y="472" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-28" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Engineering interpretation&lt;/b&gt;&lt;br&gt;Incremental value of dynamic RULA tested&lt;br&gt;Deployment claims constrained by evidence" vertex="1">
+          <mxGeometry height="95" width="556" x="1377" y="638" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-29" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.6;fontFamily=Liberation Serif;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Current use&lt;/b&gt;&lt;br&gt;Offline, semi-automated decision-support research" vertex="1">
+          <mxGeometry height="80" width="556" x="1377" y="759" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-30" edge="1" parent="EVld4AH_a6RbFpJAuJxJ-1" source="EVld4AH_a6RbFpJAuJxJ-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.6;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="EVld4AH_a6RbFpJAuJxJ-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-31" edge="1" parent="EVld4AH_a6RbFpJAuJxJ-1" source="EVld4AH_a6RbFpJAuJxJ-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.6;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="EVld4AH_a6RbFpJAuJxJ-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-32" edge="1" parent="EVld4AH_a6RbFpJAuJxJ-1" source="EVld4AH_a6RbFpJAuJxJ-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.6;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="EVld4AH_a6RbFpJAuJxJ-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-33" edge="1" parent="EVld4AH_a6RbFpJAuJxJ-1" source="EVld4AH_a6RbFpJAuJxJ-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.6;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="EVld4AH_a6RbFpJAuJxJ-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-34" edge="1" parent="EVld4AH_a6RbFpJAuJxJ-1" source="EVld4AH_a6RbFpJAuJxJ-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.6;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="EVld4AH_a6RbFpJAuJxJ-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-35" edge="1" parent="EVld4AH_a6RbFpJAuJxJ-1" source="EVld4AH_a6RbFpJAuJxJ-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.6;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="EVld4AH_a6RbFpJAuJxJ-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-36" edge="1" parent="EVld4AH_a6RbFpJAuJxJ-1" source="EVld4AH_a6RbFpJAuJxJ-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.6;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="EVld4AH_a6RbFpJAuJxJ-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-37" edge="1" parent="EVld4AH_a6RbFpJAuJxJ-1" source="EVld4AH_a6RbFpJAuJxJ-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.6;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="EVld4AH_a6RbFpJAuJxJ-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-38" edge="1" parent="EVld4AH_a6RbFpJAuJxJ-1" source="EVld4AH_a6RbFpJAuJxJ-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.6;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="EVld4AH_a6RbFpJAuJxJ-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-39" edge="1" parent="EVld4AH_a6RbFpJAuJxJ-1" source="EVld4AH_a6RbFpJAuJxJ-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.6;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="EVld4AH_a6RbFpJAuJxJ-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-40" edge="1" parent="EVld4AH_a6RbFpJAuJxJ-1" source="EVld4AH_a6RbFpJAuJxJ-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.6;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="EVld4AH_a6RbFpJAuJxJ-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-41" edge="1" parent="EVld4AH_a6RbFpJAuJxJ-1" source="EVld4AH_a6RbFpJAuJxJ-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.6;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="EVld4AH_a6RbFpJAuJxJ-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-42" edge="1" parent="EVld4AH_a6RbFpJAuJxJ-1" source="EVld4AH_a6RbFpJAuJxJ-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.6;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="EVld4AH_a6RbFpJAuJxJ-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-43" edge="1" parent="EVld4AH_a6RbFpJAuJxJ-1" source="EVld4AH_a6RbFpJAuJxJ-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.6;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="EVld4AH_a6RbFpJAuJxJ-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-44" edge="1" parent="EVld4AH_a6RbFpJAuJxJ-1" source="EVld4AH_a6RbFpJAuJxJ-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.6;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="EVld4AH_a6RbFpJAuJxJ-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-45" edge="1" parent="EVld4AH_a6RbFpJAuJxJ-1" source="EVld4AH_a6RbFpJAuJxJ-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.6;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="EVld4AH_a6RbFpJAuJxJ-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-46" edge="1" parent="EVld4AH_a6RbFpJAuJxJ-1" source="EVld4AH_a6RbFpJAuJxJ-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.6;exitX=0.5;exitY=1;entryX=0.28;entryY=0;" target="EVld4AH_a6RbFpJAuJxJ-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-47" edge="1" parent="EVld4AH_a6RbFpJAuJxJ-1" source="EVld4AH_a6RbFpJAuJxJ-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.6;exitX=0.5;exitY=1;entryX=0.72;entryY=0;" target="EVld4AH_a6RbFpJAuJxJ-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-48" edge="1" parent="EVld4AH_a6RbFpJAuJxJ-1" source="EVld4AH_a6RbFpJAuJxJ-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.8;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="EVld4AH_a6RbFpJAuJxJ-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-49" edge="1" parent="EVld4AH_a6RbFpJAuJxJ-1" source="EVld4AH_a6RbFpJAuJxJ-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#111111;strokeWidth=1.8;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="EVld4AH_a6RbFpJAuJxJ-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-50" parent="EVld4AH_a6RbFpJAuJxJ-1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Liberation Serif;fontSize=12.5;fontStyle=2;fontColor=#333333;" value="Names, participant identifiers, the MSD Index, and the nine pain indicators excluded from predictors" vertex="1">
+          <mxGeometry height="32" width="556" x="65" y="896" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-51" parent="EVld4AH_a6RbFpJAuJxJ-1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Liberation Serif;fontSize=12.5;fontStyle=2;fontColor=#333333;" value="No resampling correction: primary analysis · Class weighting: sensitivity analysis&lt;br&gt;SMOTE not used — Low-risk class (n = 6) too small for stable interpolation" vertex="1">
+          <mxGeometry height="48" width="556" x="721" y="817" as="geometry" />
+        </mxCell>
+        <mxCell id="EVld4AH_a6RbFpJAuJxJ-52" parent="EVld4AH_a6RbFpJAuJxJ-1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#f5f6f8;strokeColor=#666666;strokeWidth=1.4;fontFamily=Liberation Serif;fontSize=15;fontStyle=2;align=center;verticalAlign=middle;" value="External validation, independent replication, and deployment testing remain future steps." vertex="1">
+          <mxGeometry height="56" width="1560" x="220" y="960" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

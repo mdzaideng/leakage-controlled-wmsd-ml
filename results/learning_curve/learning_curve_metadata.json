@@ -1,0 +1,20 @@
+{
+  "seed": 20260904,
+  "outer_folds": 5,
+  "outer_repeats": 10,
+  "training_fractions": [
+    0.4,
+    0.55,
+    0.7,
+    0.85,
+    1.0
+  ],
+  "model": "GradientBoostingClassifier",
+  "model_parameters": {
+    "n_estimators": 100,
+    "learning_rate": 0.03,
+    "max_depth": 1,
+    "min_samples_leaf": 2
+  },
+  "status": "diagnostic; not used for model selection or primary performance estimation"
+}
