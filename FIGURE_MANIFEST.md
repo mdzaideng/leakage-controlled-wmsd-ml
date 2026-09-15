@@ -4,10 +4,10 @@ All regenerated scientific figures use a Times New Roman-compatible serif stack 
 
 | Figure | File | Reproducible code/source | Editable diagram source |
 |---|---|---|---|
-| 1 | `Figure_01_corrected_workflow.png` | `src/generate_study_workflow_figures.py` | `figures/diagram_sources/Figure_01_corrected_workflow.drawio` |
+| 1 | `Figure_01_workflow.png` | `src/generate_study_workflow_figures.py` | `figures/diagram_sources/Figure_01_workflow.drawio` |
 | 2 | `Figure_02_data_pipeline.png` | `src/generate_study_workflow_figures.py` | `figures/diagram_sources/Figure_02_data_pipeline.drawio` |
 | 3 | `Figure_03_marker_frame.png` | Original anonymised illustrative frame embedded in the manuscript | — (photographic frame, not a diagram) |
-| 4 | `Figure_04_leakage_controlled_workflow.png` | `src/generate_model_figures.py` | `figures/diagram_sources/Figure_04_leakage_controlled_workflow.drawio` |
+| 4 | `Figure_04_leakage_controlled_ML_workflow.png` | `src/generate_model_figures.py` | `figures/diagram_sources/Figure_04_leakage_controlled_ML_workflow.drawio` |
 | 5 | `Figure_05_repeated_nested_cv.png` | `src/generate_model_figures.py` | `figures/diagram_sources/Figure_05_repeated_nested_cv.drawio` |
 | 6 | `Figure_06_pain_prevalence.png` | `src/generate_descriptive_figures.py`; deidentified counts CSV | — (data-driven plot) |
 | 7 | `Figure_07_RULA_right.png` | `src/generate_descriptive_figures.py`; analytical workbook | — (data-driven plot) |
